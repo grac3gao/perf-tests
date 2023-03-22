@@ -35,6 +35,8 @@ spec:
           requests:
             cpu: 5m
             memory: "20M"
+          limits:
+            fake/gpu: 1
         {{if $EnablePVs}}
         volumeMounts:
           - name: pv

@@ -62,6 +62,8 @@ spec:
           requests:
             cpu: {{$CpuRequest}}
             memory: {{$MemoryRequest}}
+          limits:
+            fake/gpu: 1
         volumeMounts:
           - name: configmap
             mountPath: /var/configmap
